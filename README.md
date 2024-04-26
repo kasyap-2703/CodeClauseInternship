@@ -1,6 +1,6 @@
 # CodeClauseInternship
 
-# Unique Tic-Tac-Toe
+# Tic-Tac-Toe
 
 Welcome to Unique Tic-Tac-Toe, a simple Python implementation of the classic Tic-Tac-Toe game with a unique twist! This version is copyright-free and open-source.
 
