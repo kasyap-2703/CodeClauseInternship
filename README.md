@@ -23,8 +23,6 @@ Welcome to Unique Tic-Tac-Toe, a simple Python implementation of the classic Tic
 
 You can run the game by executing the `tic_tac_toe.py` file. Make sure you have Python installed on your system.
 
-```bash
-python tic_tac_toe.py
 
 
 # Object Detection System
@@ -51,6 +49,3 @@ This project involves creating an object detection model capable of identifying 
 3. Download the pre-trained model weights and configuration files (if applicable).
 4. Run the object detection script, passing the image or video stream as input.
 5. View the output with detected objects highlighted or labeled.
-
-```bash
-python object_detection.py --input image.jpg
