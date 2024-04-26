@@ -1,15 +1,15 @@
 get_ipython().system('pip install opencv-python')
 import cv2
 import matplotlib.pyplot as plt
-config_file = "C:/Users/KIIT/Music/objdetection/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt"
-frozen_model = "C:/Users/KIIT/Music/objdetection/frozen_inference_graph.pb"
+config_file = "C:/Users/KIIT/documents/objdetection/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt"
+frozen_model = "C:/Users/KIIT/documents/objdetection/frozen_inference_graph.pb"
 
 
 model = cv2.dnn_DetectionModel(frozen_model,config_file)
 
 
 classLabels = []
-file_name = "C:/Users/KIIT/Music/objdetection/label.txt"
+file_name = "C:/Users/KIIT/documents/objdetection/label.txt"
 with open(file_name,'rt') as fpt:
     classLabels = fpt.read().rstrip('\n').split('\n')
 
@@ -24,7 +24,7 @@ model.setInputMean((127.5,127.5,127.5))
 model.setInputSwapRB(True)
 
 
-img = cv2.imread("C:/Users/KIIT/Music/objdetection/demo.jpg")
+img = cv2.imread("C:/Users/KIIT/documents/objdetection/demo.jpg")
 
 
 plt.imshow(img)
@@ -47,7 +47,7 @@ plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 
 screen_width, screen_height = 700, 480
 
-cap = cv2.VideoCapture(r"C:\Users\KIIT\Music\objdetection\General_public.mov")
+cap = cv2.VideoCapture(r"C:\Users\KIIT\documents\objdetection\General_public.mov")
 
 if not cap.isOpened():
     cap = cv2.VideoCapture(0)  
